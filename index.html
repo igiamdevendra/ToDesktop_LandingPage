@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="flex justify-between items-center p-3 bg-white shadow-lg">
+        <a href="#" class="flex gap-2 items-center">
+            <img src="assets/asset 0.png" alt="">
+            <span class="text-xl font-medium">ToDesktop</span>
+        </a>
+        
+        <div id="div-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-semibold hover:text-primary">Pricing</a>
+            <a href="#" class="font-semibold hover:text-primary">Docs</a>
+            <a href="#" class="font-semibold hover:text-primary">Changelog</a>
+            <a href="#" class="font-semibold hover:text-primary">Blogs</a>
+            <a href="#" class="font-semibold hover:text-primary">Login</a>
+        </div>
+
+        <button class="hidden lg:flex items-center gap-2 text-lg border border-gray-400 py-2 px-4 rounded-xl hover:border-gray-700">
+            <img src="assets/asset 1.svg" alt="">
+            <span>Electron Developers</span>
+            <i class="ri-arrow-right-line"></i>
+        </button>
+        
+        <button id="menu-btn" onclick="toggleMenu()" class="text-xl lg:hidden">
+            <i class="ri-menu-line p-2"></i>
+        </button>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white fixed inset-0 p-3">
+            <div class="flex justify-between">
+                <a href="#" class="flex gap-2 items-center">
+                    <img src="assets/asset 0.png" alt="">
+                    <span class="text-xl font-medium">ToDesktop</span>
+                </a>
+                <button id="menu-btn" onclick="toggleMenu()" class="text-xl lg:hidden">
+                    <i class="ri-close-large-line p-2"></i>
+                </button>
+            </div>
+            <div id="mobile-menu-items" class="mt-6">
+                <a href="#" class="font-semibold hover:bg-gray-50 p-3 m-3 block rounded-lg">Pricing</a>
+                <a href="#" class="font-semibold hover:bg-gray-50 p-3 m-3 block rounded-lg">Docs</a>
+                <a href="#" class="font-semibold hover:bg-gray-50 p-3 m-3 block rounded-lg">Changelog</a>
+                <a href="#" class="font-semibold hover:bg-gray-50 p-3 m-3 block rounded-lg">Blogs</a>
+                <a href="#" class="font-semibold hover:bg-gray-50 p-3 m-3 block rounded-lg">Login</a>
+            </div>
+            <div class="bg-gray-400 h-[1px]"></div>
+            
+            <button class="flex items-center gap-2 text-lg py-3 px-4 mt-6 w-full hover:bg-gray-50 rounded-lg">
+                <img src="assets/asset 1.svg" alt="">
+                <span>Electron Developers</span>
+            </button>
+        </div>
+     </nav>
+
+     <script src="app.js"></script>
+</body>
+</html>
