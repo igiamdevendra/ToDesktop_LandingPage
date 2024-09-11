@@ -15,18 +15,18 @@
 </head>
 <body>
     <!-- Navbar -->
-     <nav class="flex justify-between items-center p-3 bg-white shadow-lg">
+     <nav class="flex justify-between items-center p-4 bg-white shadow-lg">
         <a href="#" class="flex gap-2 items-center">
             <img src="assets/asset 0.png" alt="">
             <span class="text-xl font-medium">ToDesktop</span>
         </a>
         
         <div id="div-menu" class="hidden lg:flex gap-12">
-            <a href="#" class="font-semibold hover:text-primary">Pricing</a>
-            <a href="#" class="font-semibold hover:text-primary">Docs</a>
+            <a href="#" class="font-semibold hover:text-[#1b3bca]">Pricing</a>
+            <a href="#" class="font-semibold hover:text-[#1b3bca]">Docs</a>
             <a href="#" class="font-semibold hover:text-primary">Changelog</a>
-            <a href="#" class="font-semibold hover:text-primary">Blogs</a>
-            <a href="#" class="font-semibold hover:text-primary">Login</a>
+            <a href="#" class="font-semibold hover:text-[#1b3bca]">Blogs</a>
+            <a href="#" class="font-semibold hover:text-[#1b3bca]">Login</a>
         </div>
 
         <button class="hidden lg:flex items-center gap-2 text-lg border border-gray-400 py-2 px-4 rounded-xl hover:border-gray-700">
@@ -64,6 +64,43 @@
             </button>
         </div>
      </nav>
+
+     <!-- Hero-Section -->
+      <main>
+        <div id="hero" class="flex flex-col px-6 space-y-8 mt-8 sm:text-center sm:items-center sm:max-w-2xl sm:mx-auto sm:mt-16">
+            <div id="version-text" class=" flex items-center gap-2 bg-[#FFF6CC] w-fit px-3 py-1 border border-yellow-300 hover:border-yellow-500 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 group cursor-pointer">
+                <div class="w-2 h-2 bg-yellow-400 rounded-[50%] border border-yellow-600"></div>
+                <p class="text-yellow-800 font-bold">v0.23.1</p>
+                <i class="ri-arrow-right-line text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+            </div>
+
+            <div class="hidden sm:flex gap-4 text-lg font-semibold text-gray-600">
+                <div class="flex gap-2">
+                    <i class="ri-code-box-fill"></i>
+                    <span> Code optional</span>
+                </div>
+                <div class="flex gap-2">
+                    <i class="ri-hand"></i>
+                    <span>Drag & drop builder</span>
+                </div>
+                <div class="flex gap-2">
+                    <i class="ri-window-fill"></i>
+                    <span>Windows, Mac, Linux</span>
+                </div>
+            </div>
+            
+            <h1 class="text-5xl font-bold sm:text-6xl">Web app to desktop app in minutes</h1>
+            
+            <p class="text-xl text-gray-700 font-medium leading-normal">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+            
+            <div id="hero-btn" class="gap-4 pt-5 flex flex-col sm:flex-row w-full justify-center">
+                <button class="bg-[#1b3bca] hover:bg-[#2b49ce] sm:inline-block block py-3 px-8 rounded-xl text-white font-medium text-xl">Download now</button>
+                <button class="py-3 px-8 border border-gray-300 hover:border-gray-400 rounded-xl font-medium text-xl">Read docs</button>
+            </div>
+        </div>
+
+
+      </main>
 
      <script src="app.js"></script>
 </body>
